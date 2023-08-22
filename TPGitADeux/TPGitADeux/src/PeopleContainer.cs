@@ -24,7 +24,7 @@ namespace TPGitADeux.src
         {
             if (people.Count > 0)
             {
-                Person[] ap = people.OrderBy(p => p.firstName).ToArray();
+                Person[] ap = people.OrderBy(p => p.FirstName).ToArray();
                 List<Person> lp = new List<Person>();
                 foreach (Person p in ap)
                 {
@@ -42,7 +42,7 @@ namespace TPGitADeux.src
         {
             if (people.Count > 0)
             {
-                Person[] ap = people.OrderBy(p => p.lastName).ToArray();
+                Person[] ap = people.OrderBy(p => p.LastName).ToArray();
                 List<Person> lp = new List<Person>();
                 foreach (Person p in ap)
                 {

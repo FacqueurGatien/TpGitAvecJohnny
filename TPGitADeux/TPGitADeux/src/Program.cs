@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-
+            PeopleContainer pc = new PeopleContainer(new List<Person>() { myPerson});
         }
     }
 }
