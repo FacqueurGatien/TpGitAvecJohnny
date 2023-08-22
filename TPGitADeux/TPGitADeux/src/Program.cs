@@ -6,13 +6,15 @@ namespace TPGitADeux.src
     {
         static void Main(string[] args)
         {
+            Person myPerson = new Person(AskName(), AskFirstName());
+            Console.WriteLine(myPerson.ToString());
             PeopleContainer pc = new PeopleContainer(new List<Person>() { myPerson});
         }
         /// <summary>
         /// Demande le nom de la personne.
         /// </summary>
         /// <returns>string</returns> le nom de la personne.
-        public string AskName()
+        public static string AskName()
         {
             Console.WriteLine("Veuillez saisir votre nom(lettres uniquement) :");
             string name = Console.ReadLine();
@@ -23,7 +25,7 @@ namespace TPGitADeux.src
         /// Demande le prénom de la personne
         /// </summary>
         /// <returns>string</returns> le prénom de la personne.
-        public string AskFirstName()
+        public static string AskFirstName()
         {
             Console.WriteLine("Veuillez saisir votre prénom(lettres uniquement) : ");
             string firstName = Console.ReadLine();

@@ -13,14 +13,14 @@ namespace TPGitADeux.src
     {
         
         public string LastName { get; set; }
-        public int FirstName { get; set; }
+        public string FirstName { get; set; }
 
         /// <summary>
         /// Constructeur paramétré.
         /// </summary>
         /// <param name="_lastName">string</param> nom de la personne.
         /// <param name="_firstName">string</param> prénom de la personne.
-        public Person(string _lastName, int _firstName)
+        public Person(string _lastName, string _firstName)
         {
             LastName = _lastName;
             FirstName = _firstName;
