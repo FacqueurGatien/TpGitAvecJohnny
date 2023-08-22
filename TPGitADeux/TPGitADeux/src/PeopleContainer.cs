@@ -20,6 +20,24 @@ namespace TPGitADeux.src
                 people= _people;
             }
         }
+        public void AddPerson(Person _person)
+        {
+            if (people != null)
+            {
+                people.Add(_person);
+            }
+        }
+        public void RemovePerson(Person _person)
+        {
+            if (people != null && people.Count>0)
+            {
+                Person p = people.Find(p => p.FirstName == _person.FirstName && p.LastName == _person.LastName);
+                if (p != null)
+                {
+                    people.Remove(p);
+                }
+            }
+        }
         public List<Person>? SortByFirstName()
         {
             if (people.Count > 0)
